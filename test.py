@@ -1,9 +1,4 @@
-from flask import Flask
-app = Flask(__name__)
+import streamlit as st
 
-@app.route('/')
-def hello():
-    return "Hello,  World!"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+st.title("Hello, DevOps World!")
+st.write("This is a simple Streamlit app.")
